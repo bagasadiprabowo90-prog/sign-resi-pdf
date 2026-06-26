@@ -1,4 +1,4 @@
-# Sign Resi
+# BLP Sign App
 
 Aplikasi web mobile-first untuk menandatangani PDF **Surat Jalan** langsung dari HP/komputer.
 Bekerja **sepenuhnya offline** — tidak butuh internet, tidak butuh akun, tidak ada sinkronisasi cloud.

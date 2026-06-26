@@ -2,7 +2,7 @@
 SETLOCAL EnableDelayedExpansion
 
 echo ===================================================
-echo   Sign Resi - Push to GitHub & Deploy to Vercel
+echo   BLP Sign App - Push to GitHub ^& Deploy to Vercel
 echo ===================================================
 echo.
 
@@ -26,21 +26,21 @@ if not exist .git (
 :: Step 3: Add and Commit
 echo [*] Menambahkan file ke Git...
 git add .
-echo [*] Melakukan commit pertama...
-git commit -m "Initial commit - Sign Resi" 2>nul
+echo [*] Melakukan commit...
+git commit -m "Update - BLP Sign App branding and logo" 2>nul
 if %ERRORLEVEL% neq 0 (
     :: Try setting config if it fails due to no identity
     git config --global user.email "bagasadiprabowo90@gmail.com"
     git config --global user.name "Bagas Adi Prabowo"
-    git commit -m "Initial commit - Sign Resi"
+    git commit -m "Update - BLP Sign App branding and logo"
 )
 
 echo.
 echo ===================================================
 echo   PILIHAN PUSH KE GITHUB
 echo ===================================================
-echo [1] Saya sudah membuat repositori kosong di GitHub dan punya URL-nya (e.g. https://github.com/.../...)
-echo [2] Saya ingin membuat repositori baru via GitHub CLI (butuh Github CLI terinstall)
+echo [1] Saya sudah membuat repositori kosong di GitHub dan punya URL-nya
+echo [2] Saya ingin membuat repositori baru via GitHub CLI
 echo [3] Lewati langkah GitHub (hanya deploy ke Vercel)
 echo.
 set /p CHOICE="Pilih opsi (1/2/3): "
@@ -54,7 +54,7 @@ if "%CHOICE%"=="1" (
 ) else if "%CHOICE%"=="2" (
     where gh >nul 2>nul
     if %ERRORLEVEL% neq 0 (
-        echo [ERROR] GitHub CLI (gh) tidak ditemukan. Silakan install gh atau gunakan opsi 1.
+        echo [ERROR] GitHub CLI tidak ditemukan. Silakan install gh atau gunakan opsi 1.
         pause
     ) else (
         echo [*] Membuat repositori baru di GitHub...

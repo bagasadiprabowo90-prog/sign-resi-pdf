@@ -129,7 +129,7 @@ export default function App() {
             </svg>
           </div>
           <div>
-            <h1 className="text-base font-bold text-white leading-tight">Sign Resi</h1>
+            <h1 className="text-base font-bold text-white leading-tight">BLP Sign App</h1>
             <p className="text-xs text-white/70">Tanda Tangan Surat Jalan</p>
           </div>
           {file && step !== 'upload' && (
