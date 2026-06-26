@@ -45,3 +45,4 @@ npm run preview
 - Render PDF: `pdfjs-dist` (dikunci di **4.10.38** — versi 5/6 crash di browser).
 - Tanda tangan PDF: `pdf-lib`. Gambar tanda tangan: `react-signature-canvas`.
 - Tanda tangan ditempel di **halaman terakhir** PDF.
+# sign-resi-pdf
